@@ -40,6 +40,13 @@ export interface PressMentionItem {
     order: number;
 }
 
+export interface GalleryPhotoItem {
+    id: number;
+    image_path: string;
+    caption: string | null;
+    order: number;
+}
+
 export interface BlogCategoryItem {
     id: number;
     name: string;

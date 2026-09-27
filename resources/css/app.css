@@ -8,7 +8,9 @@
 
 @theme {
     --font-sans: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    --font-serif: 'Fraunces Variable', ui-serif, Georgia, 'Times New Roman', serif;
+    /* Kept as an alias (not an actual serif) so existing `font-serif` utility classes still
+       resolve to the same single sans-serif family across the whole site. */
+    --font-serif: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
     --radius-lg: var(--radius);
     --radius-md: calc(var(--radius) - 2px);

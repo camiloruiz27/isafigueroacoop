@@ -7,6 +7,7 @@
         "about": "Sobre mí",
         "speaking": "Charlas",
         "press": "Prensa",
+        "gallery": "Galería",
         "blog": "Blog",
         "contact": "Contacto",
         "cta": "Invitar a Isabella",
@@ -46,6 +47,11 @@
             "body": "Cada charla combina experiencia real dentro del movimiento cooperativo con un mensaje claro sobre juventud, liderazgo e innovación.",
             "cta": "Ver todos los temas",
             "requestCta": "Solicitar esta charla"
+        },
+        "gallery": {
+            "eyebrow": "Momentos",
+            "heading": "Isabella en acción",
+            "cta": "Ver toda la galería"
         },
         "testimonials": {
             "eyebrow": "Lo que dicen de ella",
@@ -102,6 +108,12 @@
         "heading": "Isabella en los medios",
         "intro": "Una selección de entrevistas, columnas y menciones sobre su trabajo en el movimiento cooperativo.",
         "readMore": "Leer nota"
+    },
+    "gallery": {
+        "eyebrow": "Galería",
+        "heading": "Isabella en acción",
+        "intro": "Charlas, eventos y momentos del camino cooperativo, en imágenes.",
+        "empty": "Muy pronto habrá fotos aquí."
     },
     "blog": {
         "eyebrow": "Blog",

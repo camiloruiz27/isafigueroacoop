@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\BlogPost;
+use App\Models\GalleryPhoto;
 use App\Models\PressMention;
 use App\Models\SiteSetting;
 use App\Models\SiteStat;
@@ -37,6 +38,7 @@ class HomeController extends Controller
             'speakingTopics' => SpeakingTopic::featured()->limit(3)->get()->map->toPublicArray(),
             'testimonials' => Testimonial::featured()->get()->map->toPublicArray(),
             'pressMentions' => PressMention::featured()->limit(6)->get()->map->toPublicArray(),
+            'galleryPreview' => GalleryPhoto::featured()->limit(8)->get()->map->toPublicArray(),
             'latestPosts' => BlogPost::published()->with('category')->latest('published_at')->limit(3)->get()->map->toPublicArrayWithCategory(),
         ]);
     }

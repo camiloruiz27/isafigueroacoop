@@ -3,6 +3,7 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LegalController;
 use App\Http\Controllers\NewsletterController;
@@ -22,6 +23,7 @@ $registerMarketingRoutes = function (): void {
     Route::get('charlas/{speakingTopic:slug}', [SpeakingTopicController::class, 'show'])->name('speaking.show');
 
     Route::get('prensa', [PressController::class, 'index'])->name('press');
+    Route::get('galeria', [GalleryController::class, 'index'])->name('gallery');
 
     Route::get('blog', [BlogController::class, 'index'])->name('blog.index');
     Route::get('blog/{blogPost:slug}', [BlogController::class, 'show'])->name('blog.show');
