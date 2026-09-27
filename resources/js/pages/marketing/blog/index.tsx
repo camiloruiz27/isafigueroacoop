@@ -21,8 +21,8 @@ export default function BlogIndex({ posts, categories, activeCategory }: BlogInd
 
             <section className="mx-auto max-w-[1400px] px-4 pt-16 pb-24 sm:px-6 lg:px-10">
                 <ScrollReveal className="max-w-2xl">
-                    <p className="text-primary text-xs font-semibold tracking-[0.2em] uppercase">{t('blog.eyebrow')}</p>
-                    <h1 className="mt-3 font-serif text-4xl leading-tight font-medium text-balance md:text-5xl">{t('blog.heading')}</h1>
+                    <p className="text-primary text-xs font-bold tracking-[0.2em] uppercase">{t('blog.eyebrow')}</p>
+                    <h1 className="mt-3 font-serif text-4xl leading-tight font-bold tracking-tight text-balance md:text-5xl">{t('blog.heading')}</h1>
                 </ScrollReveal>
 
                 {categories.length > 0 && (

@@ -14,8 +14,8 @@ export function BlogPostCard({ post }: { post: BlogPostSummary }) {
                 className="aspect-16/10 w-full transition-transform duration-500 group-hover:scale-[1.02]"
             />
             <div className="mt-4">
-                {post.category && <p className="text-primary text-xs font-semibold tracking-[0.15em] uppercase">{post.category.name}</p>}
-                <h3 className="mt-2 font-serif text-xl leading-snug font-medium">{post.title}</h3>
+                {post.category && <p className="text-primary text-xs font-bold tracking-[0.15em] uppercase">{post.category.name}</p>}
+                <h3 className="mt-2 font-serif text-xl leading-snug font-bold tracking-tight">{post.title}</h3>
                 {post.excerpt && <p className="text-muted-foreground mt-2 text-sm">{post.excerpt}</p>}
                 <div className="text-muted-foreground mt-3 flex items-center justify-between text-xs">
                     {post.published_at && (

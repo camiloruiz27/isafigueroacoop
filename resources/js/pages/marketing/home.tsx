@@ -41,7 +41,7 @@ export default function Home({ hero, bio, tedx, stats, speakingTopics, testimoni
     const { t, r } = useTranslation();
 
     return (
-        <MarketingLayout>
+        <MarketingLayout transparentHeader>
             <Head title={hero.heading ?? undefined} />
 
             <Hero hero={hero} />
@@ -77,8 +77,8 @@ export default function Home({ hero, bio, tedx, stats, speakingTopics, testimoni
                 <section className="bg-muted/40 py-24">
                     <div className="mx-auto grid max-w-[1400px] gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:px-10">
                         <ScrollReveal className="lg:col-span-4">
-                            <p className="text-primary text-xs font-semibold tracking-[0.2em] uppercase">{t('about.eyebrow')}</p>
-                            <h2 className="mt-3 font-serif text-3xl font-medium">{bio.heading}</h2>
+                            <p className="text-primary text-xs font-bold tracking-[0.2em] uppercase">{t('about.eyebrow')}</p>
+                            <h2 className="mt-3 font-serif text-3xl font-bold tracking-tight">{bio.heading}</h2>
                         </ScrollReveal>
                         <ScrollReveal delay={0.1} className="lg:col-span-8">
                             <div

@@ -11,7 +11,7 @@ export function StatsSection({ stats }: { stats: SiteStatItem[] }) {
     return (
         <section className="border-border bg-muted/40 border-y">
             <div className="mx-auto max-w-[1400px] px-4 py-14 sm:px-6 lg:px-10">
-                <p className="text-primary mb-8 text-xs font-semibold tracking-[0.2em] uppercase">{t('home.stats.eyebrow')}</p>
+                <p className="text-primary mb-8 text-xs font-bold tracking-[0.2em] uppercase">{t('home.stats.eyebrow')}</p>
                 <StaggerGroup className="grid grid-cols-1 gap-10 sm:grid-cols-3">
                     {stats.map((stat) => (
                         <StaggerItem key={stat.id}>

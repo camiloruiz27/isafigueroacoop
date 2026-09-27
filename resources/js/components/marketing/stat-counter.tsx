@@ -68,7 +68,7 @@ export function StatCounter({ value, label }: StatCounterProps) {
 
     return (
         <div>
-            <p ref={ref} className="text-primary font-serif text-4xl font-medium md:text-5xl">
+            <p ref={ref} className="text-primary font-serif text-4xl font-bold tracking-tight md:text-5xl">
                 {prefix}
                 {new Intl.NumberFormat(locale === 'en' ? 'en-US' : 'es-CO').format(displayNumber)}
                 {suffix}
