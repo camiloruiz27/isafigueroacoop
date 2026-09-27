@@ -30,7 +30,7 @@ jobs:
       # No --delete flag: this only adds/updates files, it never removes anything on
       # the server, so it can't wipe out uploaded media, logs or other runtime files.
       - name: Sync application files to Hostinger
-        uses: burnett01/rsync-deployments@7.0
+        uses: burnett01/rsync-deployments@v9
         with:
           switches: -avzr --exclude=".git/" --exclude="node_modules/" --exclude=".env"
           path: ./
