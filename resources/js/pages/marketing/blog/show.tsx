@@ -23,8 +23,8 @@ export default function BlogShow({ post }: { post: BlogPostDetail }) {
                 </Link>
 
                 <ScrollReveal className="mt-8">
-                    {post.category && <p className="text-primary text-xs font-semibold tracking-[0.15em] uppercase">{post.category.name}</p>}
-                    <h1 className="mt-3 font-serif text-4xl leading-tight font-medium text-balance md:text-5xl">{post.title}</h1>
+                    {post.category && <p className="text-primary text-xs font-bold tracking-[0.15em] uppercase">{post.category.name}</p>}
+                    <h1 className="mt-3 font-serif text-4xl leading-tight font-bold tracking-tight text-balance md:text-5xl">{post.title}</h1>
                     {post.published_at && (
                         <p className="text-muted-foreground mt-4 text-sm">
                             {new Date(post.published_at).toLocaleDateString(locale === 'en' ? 'en-US' : 'es-CO', { dateStyle: 'long' })}

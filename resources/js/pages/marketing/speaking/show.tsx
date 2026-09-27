@@ -29,8 +29,10 @@ export default function SpeakingShow({ speakingTopic }: { speakingTopic: Speakin
                     </ScrollReveal>
 
                     <ScrollReveal delay={0.1} className="lg:col-span-7">
-                        <p className="text-primary text-xs font-semibold tracking-[0.2em] uppercase">{t('speaking.eyebrow')}</p>
-                        <h1 className="mt-3 font-serif text-4xl leading-tight font-medium text-balance md:text-5xl">{speakingTopic.title}</h1>
+                        <p className="text-primary text-xs font-bold tracking-[0.2em] uppercase">{t('speaking.eyebrow')}</p>
+                        <h1 className="mt-3 font-serif text-4xl leading-tight font-bold tracking-tight text-balance md:text-5xl">
+                            {speakingTopic.title}
+                        </h1>
                         <p className="text-muted-foreground mt-6 text-lg leading-relaxed">{speakingTopic.description}</p>
                         <Button asChild size="xl" className="mt-9">
                             <Link href={r('contact.create', { topic: speakingTopic.title })}>{t('speaking.requestCta')}</Link>

@@ -13,8 +13,8 @@ interface SectionHeadingProps {
 export function SectionHeading({ eyebrow, title, description, align = 'left', className }: SectionHeadingProps) {
     return (
         <ScrollReveal className={cn('max-w-2xl', align === 'center' && 'mx-auto text-center', className)}>
-            {eyebrow && <p className="text-primary mb-3 text-xs font-semibold tracking-[0.2em] uppercase">{eyebrow}</p>}
-            <h2 className="font-serif text-3xl leading-tight font-medium text-balance md:text-4xl">{title}</h2>
+            {eyebrow && <p className="text-primary mb-3 text-xs font-bold tracking-[0.2em] uppercase">{eyebrow}</p>}
+            <h2 className="font-serif text-3xl leading-tight font-bold tracking-tight text-balance md:text-4xl">{title}</h2>
             {description && <p className="text-muted-foreground mt-4 text-base md:text-lg">{description}</p>}
         </ScrollReveal>
     );

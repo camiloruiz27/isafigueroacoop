@@ -14,8 +14,10 @@ export default function Gallery({ photos }: { photos: GalleryPhotoItem[] }) {
 
             <section className="mx-auto max-w-[1400px] px-4 pt-16 pb-24 sm:px-6 lg:px-10">
                 <ScrollReveal className="max-w-2xl">
-                    <p className="text-primary text-xs font-semibold tracking-[0.2em] uppercase">{t('gallery.eyebrow')}</p>
-                    <h1 className="mt-3 font-serif text-4xl leading-tight font-medium text-balance md:text-5xl">{t('gallery.heading')}</h1>
+                    <p className="text-primary text-xs font-bold tracking-[0.2em] uppercase">{t('gallery.eyebrow')}</p>
+                    <h1 className="mt-3 font-serif text-4xl leading-tight font-bold tracking-tight text-balance md:text-5xl">
+                        {t('gallery.heading')}
+                    </h1>
                     <p className="text-muted-foreground mt-5 text-lg">{t('gallery.intro')}</p>
                 </ScrollReveal>
 

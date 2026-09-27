@@ -29,7 +29,7 @@ export function SiteFooter() {
             <div className="mx-auto max-w-[1400px] px-4 py-16 sm:px-6 lg:px-10">
                 <div className="border-border flex flex-col justify-between gap-10 border-b pb-12 lg:flex-row lg:items-end">
                     <div className="max-w-md">
-                        <h3 className="font-serif text-2xl font-medium">{t('footer.newsletter.heading')}</h3>
+                        <h3 className="font-serif text-2xl font-bold tracking-tight">{t('footer.newsletter.heading')}</h3>
                         <p className="text-muted-foreground mt-2 text-sm">{t('footer.newsletter.body')}</p>
                     </div>
                     <NewsletterForm />
@@ -42,7 +42,7 @@ export function SiteFooter() {
                     </div>
 
                     <div>
-                        <p className="text-muted-foreground text-xs font-semibold tracking-[0.2em] uppercase">{t('footer.nav')}</p>
+                        <p className="text-muted-foreground text-xs font-bold tracking-[0.2em] uppercase">{t('footer.nav')}</p>
                         <ul className="mt-4 space-y-2">
                             {NAV_ITEMS.map((item) => (
                                 <li key={item.key}>
@@ -55,7 +55,7 @@ export function SiteFooter() {
                     </div>
 
                     <div>
-                        <p className="text-muted-foreground text-xs font-semibold tracking-[0.2em] uppercase">{t('footer.legal')}</p>
+                        <p className="text-muted-foreground text-xs font-bold tracking-[0.2em] uppercase">{t('footer.legal')}</p>
                         <ul className="mt-4 space-y-2">
                             <li>
                                 <Link href={r('legal.privacy')} className="text-muted-foreground hover:text-primary text-sm transition-colors">
@@ -69,7 +69,7 @@ export function SiteFooter() {
                             </li>
                         </ul>
 
-                        <p className="text-muted-foreground mt-6 text-xs font-semibold tracking-[0.2em] uppercase">{t('footer.follow')}</p>
+                        <p className="text-muted-foreground mt-6 text-xs font-bold tracking-[0.2em] uppercase">{t('footer.follow')}</p>
                         <div className="mt-4 flex gap-4">
                             {SOCIAL_LINKS.map(({ icon: Icon, href, label }) => (
                                 <a

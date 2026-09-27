@@ -26,8 +26,8 @@ export default function About({ bio }: { bio: BioContent }) {
                     </ScrollReveal>
 
                     <ScrollReveal delay={0.1} className="lg:col-span-8">
-                        <p className="text-primary text-xs font-semibold tracking-[0.2em] uppercase">{t('about.eyebrow')}</p>
-                        <h1 className="mt-3 font-serif text-4xl leading-tight font-medium text-balance md:text-5xl">{bio.heading}</h1>
+                        <p className="text-primary text-xs font-bold tracking-[0.2em] uppercase">{t('about.eyebrow')}</p>
+                        <h1 className="mt-3 font-serif text-4xl leading-tight font-bold tracking-tight text-balance md:text-5xl">{bio.heading}</h1>
                         <div
                             className="prose-content text-muted-foreground mt-6 text-lg leading-relaxed"
                             dangerouslySetInnerHTML={{ __html: bio.body ?? '' }}
@@ -39,8 +39,8 @@ export default function About({ bio }: { bio: BioContent }) {
             <section className="bg-muted/40 py-24">
                 <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10">
                     <ScrollReveal className="max-w-xl">
-                        <p className="text-primary text-xs font-semibold tracking-[0.2em] uppercase">{t('about.timelineEyebrow')}</p>
-                        <h2 className="mt-3 font-serif text-3xl font-medium">{t('about.timelineHeading')}</h2>
+                        <p className="text-primary text-xs font-bold tracking-[0.2em] uppercase">{t('about.timelineEyebrow')}</p>
+                        <h2 className="mt-3 font-serif text-3xl font-bold tracking-tight">{t('about.timelineHeading')}</h2>
                     </ScrollReveal>
 
                     <div className="mt-12 max-w-2xl">

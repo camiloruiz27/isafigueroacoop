@@ -17,7 +17,7 @@ export function SpeakingTopicCard({ topic }: { topic: SpeakingTopicItem }) {
                 />
             </div>
             <div className="flex flex-1 flex-col p-6">
-                <h3 className="font-serif text-xl font-medium">{topic.title}</h3>
+                <h3 className="font-serif text-xl font-bold tracking-tight">{topic.title}</h3>
                 <p className="text-muted-foreground mt-2 flex-1 text-sm">{topic.summary}</p>
                 <Link
                     href={r('contact.create', { topic: topic.title })}

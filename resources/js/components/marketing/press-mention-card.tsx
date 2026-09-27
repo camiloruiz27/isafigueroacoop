@@ -13,8 +13,8 @@ export function PressMentionCard({ mention }: { mention: PressMentionItem }) {
             className="group border-border hover:border-primary flex flex-col justify-between border p-6 transition-colors"
         >
             <div>
-                <p className="text-muted-foreground text-xs font-semibold tracking-[0.15em] uppercase">{mention.outlet_name}</p>
-                <h3 className="mt-3 font-serif text-lg leading-snug font-medium">{mention.title}</h3>
+                <p className="text-muted-foreground text-xs font-bold tracking-[0.15em] uppercase">{mention.outlet_name}</p>
+                <h3 className="mt-3 font-serif text-lg leading-snug font-bold tracking-tight">{mention.title}</h3>
             </div>
             <div className="text-muted-foreground mt-6 flex items-center justify-between text-sm">
                 {mention.published_at && (
