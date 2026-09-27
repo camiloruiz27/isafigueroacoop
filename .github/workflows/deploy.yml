@@ -1,0 +1,57 @@
+name: Deploy to Hostinger
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Build Vite assets
+        run: |
+          npm run build
+          test -f public/build/manifest.json
+
+      # Syncs the whole application (code + compiled assets) to the server over SSH.
+      # No --delete flag: this only adds/updates files, it never removes anything on
+      # the server, so it can't wipe out uploaded media, logs or other runtime files.
+      - name: Sync application files to Hostinger
+        uses: burnett01/rsync-deployments@7.0
+        with:
+          switches: -avzr --exclude=".git/" --exclude="node_modules/" --exclude=".env"
+          path: ./
+          remote_path: /home/u206029413/domains/isafigueroacoop.com/public_html/
+          remote_host: ${{ secrets.HOSTINGER_HOST }}
+          remote_user: ${{ secrets.HOSTINGER_USER }}
+          remote_key: ${{ secrets.HOSTINGER_SSH_KEY }}
+          remote_port: ${{ secrets.HOSTINGER_PORT }}
+
+      - name: Install PHP dependencies, migrate, and clear caches
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOSTINGER_HOST }}
+          username: ${{ secrets.HOSTINGER_USER }}
+          key: ${{ secrets.HOSTINGER_SSH_KEY }}
+          port: ${{ secrets.HOSTINGER_PORT }}
+          script: |
+            set -e
+            cd /home/u206029413/domains/isafigueroacoop.com/public_html
+            composer install --no-dev --optimize-autoloader --no-interaction
+            php artisan migrate --force
+            php artisan optimize:clear
+            php artisan optimize
+            ls -la public/build/manifest.json

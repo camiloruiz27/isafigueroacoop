@@ -1,0 +1,144 @@
+{
+    "meta": {
+        "siteName": "Isabella Figueroa"
+    },
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "speaking": "Speaking",
+        "press": "Press",
+        "blog": "Blog",
+        "contact": "Contact",
+        "cta": "Invite Isabella",
+        "menu": "Menu",
+        "close": "Close"
+    },
+    "footer": {
+        "tagline": "A young voice for the cooperative movement.",
+        "nav": "Navigation",
+        "follow": "Follow",
+        "legal": "Legal",
+        "privacy": "Privacy policy",
+        "terms": "Terms and conditions",
+        "rights": "All rights reserved.",
+        "newsletter": {
+            "heading": "Get updates from Isabella",
+            "body": "Stories from the cooperative movement, upcoming talks and reflections on young leadership, straight to your inbox.",
+            "placeholder": "Your email address",
+            "cta": "Subscribe",
+            "success": "You're subscribed.",
+            "error": "Something went wrong. Please try again."
+        }
+    },
+    "home": {
+        "hero": {
+            "eyebrow": "Lawyer · Cooperative Leader · Speaker"
+        },
+        "credibility": {
+            "label": "Her voice has been featured in"
+        },
+        "stats": {
+            "eyebrow": "By the numbers"
+        },
+        "speaking": {
+            "eyebrow": "Talks and conferences",
+            "heading": "Topics to inspire your organization",
+            "body": "Every talk combines real experience inside the cooperative movement with a clear message about youth, leadership and innovation.",
+            "cta": "See all topics",
+            "requestCta": "Request this talk"
+        },
+        "testimonials": {
+            "eyebrow": "What people say",
+            "heading": "Organizations that have already invited her"
+        },
+        "tedx": {
+            "eyebrow": "A goal in progress",
+            "cta": "Be part of this journey"
+        },
+        "finalCta": {
+            "eyebrow": "Have an event in mind?",
+            "heading": "Let's bring this conversation to your stage",
+            "body": "Tell me about your event and let's talk about how this talk can add value for your audience.",
+            "cta": "Write to Isabella"
+        }
+    },
+    "about": {
+        "eyebrow": "About me",
+        "timelineEyebrow": "Journey",
+        "timelineHeading": "A path built from inside the movement",
+        "collaboratorIntro": "In collaboration with",
+        "milestones": [
+            {
+                "year": "Education",
+                "title": "Lawyer and Business Administrator",
+                "description": "Trained with a focus on international business, combining a legal perspective with a strategic view of organizations."
+            },
+            {
+                "year": "Coomeva",
+                "title": "Coomeva's youngest delegate in history",
+                "description": "Isabella took on this institutional representation role as the youngest person ever to hold it in the cooperative's history."
+            },
+            {
+                "year": "ICA",
+                "title": "Regional Youth Committee of the International Cooperative Alliance",
+                "description": "She represents the voice of Colombian cooperative youth before the body that brings together the cooperative movement across the Americas."
+            },
+            {
+                "year": "Today",
+                "title": "A public voice for young cooperativism",
+                "description": "More than 60 media publications and 100+ cooperative events and activities back her work as a young leadership role model."
+            }
+        ]
+    },
+    "speaking": {
+        "eyebrow": "Talks and conferences",
+        "heading": "Speaking topics",
+        "intro": "Every topic can be adapted to your event's length, format and audience — in person, virtual or hybrid.",
+        "requestCta": "Request this talk",
+        "backToAll": "See all topics"
+    },
+    "press": {
+        "eyebrow": "Press and media",
+        "heading": "Isabella in the media",
+        "intro": "A selection of interviews, columns and mentions of her work in the cooperative movement.",
+        "readMore": "Read article"
+    },
+    "blog": {
+        "eyebrow": "Blog",
+        "heading": "Ideas on cooperativism and young leadership",
+        "allCategories": "All",
+        "readMore": "Read article",
+        "backToBlog": "Back to blog",
+        "empty": "Articles are coming soon."
+    },
+    "contact": {
+        "eyebrow": "Contact",
+        "heading": "Invite Isabella to your next event",
+        "body": "Tell me about your organization, the type of event and the topic you're interested in. I personally review every request and will get back to you as soon as possible.",
+        "form": {
+            "name": "Full name",
+            "email": "Email address",
+            "phone": "Phone (optional)",
+            "organization": "Organization",
+            "eventType": "Event type",
+            "eventDate": "Estimated event date",
+            "topic": "Topic of interest",
+            "topicPlaceholder": "Select a topic (optional)",
+            "message": "Tell me more about your event",
+            "submit": "Send request",
+            "submitting": "Sending...",
+            "success": "Thank you! Your request was sent. Isabella will get back to you soon.",
+            "error": "We couldn't send your request. Please check the fields and try again."
+        }
+    },
+    "legal": {
+        "privacyTitle": "Privacy policy",
+        "termsTitle": "Terms and conditions"
+    },
+    "notFound": {
+        "eyebrow": "404 error",
+        "heading": "This talk doesn't exist yet",
+        "body": "The page you're looking for isn't available. The link may have changed, or it might still be waiting to be written.",
+        "cta": "Back to home"
+    }
+}
