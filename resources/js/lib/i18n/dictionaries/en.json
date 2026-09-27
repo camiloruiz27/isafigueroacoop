@@ -7,6 +7,7 @@
         "about": "About",
         "speaking": "Speaking",
         "press": "Press",
+        "gallery": "Gallery",
         "blog": "Blog",
         "contact": "Contact",
         "cta": "Invite Isabella",
@@ -46,6 +47,11 @@
             "body": "Every talk combines real experience inside the cooperative movement with a clear message about youth, leadership and innovation.",
             "cta": "See all topics",
             "requestCta": "Request this talk"
+        },
+        "gallery": {
+            "eyebrow": "Moments",
+            "heading": "Isabella in action",
+            "cta": "View full gallery"
         },
         "testimonials": {
             "eyebrow": "What people say",
@@ -102,6 +108,12 @@
         "heading": "Isabella in the media",
         "intro": "A selection of interviews, columns and mentions of her work in the cooperative movement.",
         "readMore": "Read article"
+    },
+    "gallery": {
+        "eyebrow": "Gallery",
+        "heading": "Isabella in action",
+        "intro": "Talks, events and moments from the cooperative journey, in pictures.",
+        "empty": "Photos are coming soon."
     },
     "blog": {
         "eyebrow": "Blog",

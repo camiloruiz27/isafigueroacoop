@@ -2,6 +2,7 @@ import { BlogPostCard } from '@/components/marketing/blog-post-card';
 import { CredibilityBar } from '@/components/marketing/credibility-bar';
 import { CtaBand } from '@/components/marketing/cta-band';
 import { Hero } from '@/components/marketing/hero';
+import { PhotoGalleryGrid } from '@/components/marketing/photo-gallery-grid';
 import { ScrollReveal, StaggerGroup, StaggerItem } from '@/components/marketing/scroll-reveal';
 import { SectionHeading } from '@/components/marketing/section-heading';
 import { SpeakingTopicCard } from '@/components/marketing/speaking-topic-card';
@@ -14,6 +15,7 @@ import { useTranslation } from '@/lib/i18n/i18n-context';
 import {
     type BioContent,
     type BlogPostSummary,
+    type GalleryPhotoItem,
     type HeroContent,
     type PressMentionItem,
     type SiteStatItem,
@@ -31,10 +33,11 @@ interface HomeProps {
     speakingTopics: SpeakingTopicItem[];
     testimonials: TestimonialItem[];
     pressMentions: PressMentionItem[];
+    galleryPreview: GalleryPhotoItem[];
     latestPosts: BlogPostSummary[];
 }
 
-export default function Home({ hero, bio, tedx, stats, speakingTopics, testimonials, pressMentions, latestPosts }: HomeProps) {
+export default function Home({ hero, bio, tedx, stats, speakingTopics, testimonials, pressMentions, galleryPreview, latestPosts }: HomeProps) {
     const { t, r } = useTranslation();
 
     return (
@@ -78,11 +81,30 @@ export default function Home({ hero, bio, tedx, stats, speakingTopics, testimoni
                             <h2 className="mt-3 font-serif text-3xl font-medium">{bio.heading}</h2>
                         </ScrollReveal>
                         <ScrollReveal delay={0.1} className="lg:col-span-8">
-                            <p className="font-serif text-xl leading-relaxed text-balance md:text-2xl">{bio.body}</p>
+                            <div
+                                className="prose-content font-serif text-xl leading-relaxed text-balance md:text-2xl"
+                                dangerouslySetInnerHTML={{ __html: bio.body ?? '' }}
+                            />
                             <Link href={r('about')} className="text-primary mt-6 inline-block text-sm font-medium hover:underline">
                                 {t('nav.about')} →
                             </Link>
                         </ScrollReveal>
+                    </div>
+                </section>
+            )}
+
+            {galleryPreview.length > 0 && (
+                <section className="mx-auto max-w-[1400px] px-4 py-24 sm:px-6 lg:px-10">
+                    <div className="flex items-end justify-between gap-6">
+                        <SectionHeading eyebrow={t('home.gallery.eyebrow')} title={t('home.gallery.heading')} />
+                        <ScrollReveal>
+                            <Button asChild variant="outline">
+                                <Link href={r('gallery')}>{t('home.gallery.cta')}</Link>
+                            </Button>
+                        </ScrollReveal>
+                    </div>
+                    <div className="mt-12">
+                        <PhotoGalleryGrid photos={galleryPreview} />
                     </div>
                 </section>
             )}

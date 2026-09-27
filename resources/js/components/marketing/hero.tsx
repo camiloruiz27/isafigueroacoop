@@ -12,7 +12,7 @@ export function Hero({ hero }: { hero: HeroContent }) {
         <section className="mx-auto max-w-[1400px] px-4 pt-14 pb-20 sm:px-6 lg:px-10 lg:pt-20">
             <div className="grid items-center gap-12 lg:grid-cols-12">
                 <motion.div
-                    className="lg:col-span-7"
+                    className="lg:col-span-6"
                     initial={{ opacity: 0, y: 24 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
@@ -21,7 +21,10 @@ export function Hero({ hero }: { hero: HeroContent }) {
                     <h1 className="font-serif text-5xl leading-[1.05] font-medium text-balance sm:text-6xl md:text-7xl">
                         {hero.heading ?? 'Isabella Figueroa Estrada'}
                     </h1>
-                    <p className="text-muted-foreground mt-6 max-w-xl text-lg md:text-xl">{hero.subheading}</p>
+                    <div
+                        className="prose-content text-muted-foreground mt-6 max-w-xl text-lg md:text-xl"
+                        dangerouslySetInnerHTML={{ __html: hero.subheading ?? '' }}
+                    />
                     <div className="mt-9 flex flex-wrap gap-4">
                         <Button asChild size="xl">
                             <Link href={r('contact.create')}>{hero.ctaLabel ?? t('nav.cta')}</Link>
@@ -33,12 +36,12 @@ export function Hero({ hero }: { hero: HeroContent }) {
                 </motion.div>
 
                 <motion.div
-                    className="lg:col-span-5"
+                    className="lg:col-span-6"
                     initial={{ opacity: 0, scale: 0.97 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
                 >
-                    <MediaFrame src={hero.photoPath} alt={hero.heading ?? ''} className="aspect-4/5 w-full" />
+                    <MediaFrame src={hero.photoPath} alt={hero.heading ?? ''} className="aspect-4/5 w-full lg:aspect-[3/4]" />
                 </motion.div>
             </div>
         </section>

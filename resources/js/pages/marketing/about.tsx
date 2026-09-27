@@ -28,7 +28,10 @@ export default function About({ bio }: { bio: BioContent }) {
                     <ScrollReveal delay={0.1} className="lg:col-span-8">
                         <p className="text-primary text-xs font-semibold tracking-[0.2em] uppercase">{t('about.eyebrow')}</p>
                         <h1 className="mt-3 font-serif text-4xl leading-tight font-medium text-balance md:text-5xl">{bio.heading}</h1>
-                        <p className="text-muted-foreground mt-6 text-lg leading-relaxed">{bio.body}</p>
+                        <div
+                            className="prose-content text-muted-foreground mt-6 text-lg leading-relaxed"
+                            dangerouslySetInnerHTML={{ __html: bio.body ?? '' }}
+                        />
                     </ScrollReveal>
                 </div>
             </section>

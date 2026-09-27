@@ -11,6 +11,7 @@ const NAV_ITEMS = [
     { key: 'about', route: 'about' },
     { key: 'speaking', route: 'speaking.index' },
     { key: 'press', route: 'press' },
+    { key: 'gallery', route: 'gallery' },
     { key: 'blog', route: 'blog.index' },
 ] as const;
 
