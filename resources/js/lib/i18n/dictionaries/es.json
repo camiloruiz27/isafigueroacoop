@@ -1,0 +1,144 @@
+{
+    "meta": {
+        "siteName": "Isabella Figueroa"
+    },
+    "nav": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "speaking": "Charlas",
+        "press": "Prensa",
+        "blog": "Blog",
+        "contact": "Contacto",
+        "cta": "Invitar a Isabella",
+        "menu": "Menú",
+        "close": "Cerrar"
+    },
+    "footer": {
+        "tagline": "Voz joven del movimiento cooperativo.",
+        "nav": "Navegación",
+        "follow": "Sígueme",
+        "legal": "Legal",
+        "privacy": "Política de privacidad",
+        "terms": "Términos y condiciones",
+        "rights": "Todos los derechos reservados.",
+        "newsletter": {
+            "heading": "Recibe noticias de Isabella",
+            "body": "Historias del movimiento cooperativo, próximas charlas y reflexiones sobre liderazgo joven, directo a tu correo.",
+            "placeholder": "Tu correo electrónico",
+            "cta": "Suscribirme",
+            "success": "Listo, ya estás suscrito.",
+            "error": "Algo salió mal. Intenta de nuevo."
+        }
+    },
+    "home": {
+        "hero": {
+            "eyebrow": "Abogada · Líder cooperativa · Conferencista"
+        },
+        "credibility": {
+            "label": "Su voz ha estado presente en"
+        },
+        "stats": {
+            "eyebrow": "En cifras"
+        },
+        "speaking": {
+            "eyebrow": "Charlas y conferencias",
+            "heading": "Temas para inspirar a tu organización",
+            "body": "Cada charla combina experiencia real dentro del movimiento cooperativo con un mensaje claro sobre juventud, liderazgo e innovación.",
+            "cta": "Ver todos los temas",
+            "requestCta": "Solicitar esta charla"
+        },
+        "testimonials": {
+            "eyebrow": "Lo que dicen de ella",
+            "heading": "Organizaciones que ya la invitaron"
+        },
+        "tedx": {
+            "eyebrow": "Un objetivo en construcción",
+            "cta": "Ser parte de este camino"
+        },
+        "finalCta": {
+            "eyebrow": "¿Tienes un evento en mente?",
+            "heading": "Llevemos esta conversación a tu escenario",
+            "body": "Cuéntame sobre tu evento y conversemos sobre cómo esta charla puede aportarle a tu audiencia.",
+            "cta": "Escribir a Isabella"
+        }
+    },
+    "about": {
+        "eyebrow": "Sobre mí",
+        "timelineEyebrow": "Trayectoria",
+        "timelineHeading": "Un camino construido desde adentro del movimiento",
+        "collaboratorIntro": "Con la colaboración de",
+        "milestones": [
+            {
+                "year": "Formación",
+                "title": "Abogada y Administradora de Empresas",
+                "description": "Formación con énfasis en Negocios Internacionales, combinando la mirada jurídica con una visión estratégica de las organizaciones."
+            },
+            {
+                "year": "Coomeva",
+                "title": "La Delegada más joven en la historia de Coomeva",
+                "description": "Isabella asumió este rol de representación institucional siendo la persona más joven en ocuparlo en toda la historia de la cooperativa."
+            },
+            {
+                "year": "ACI",
+                "title": "Comité Regional de Juventud de la Alianza Cooperativa Internacional",
+                "description": "Representa la voz de la juventud cooperativa colombiana ante el organismo que agrupa al movimiento cooperativo en toda América."
+            },
+            {
+                "year": "Hoy",
+                "title": "Voz pública del cooperativismo joven",
+                "description": "Más de 60 publicaciones en medios y más de 100 espacios y actividades cooperativas respaldan su trabajo como referente de liderazgo joven."
+            }
+        ]
+    },
+    "speaking": {
+        "eyebrow": "Charlas y conferencias",
+        "heading": "Temas de charla",
+        "intro": "Cada tema puede adaptarse a la duración, el formato y la audiencia de tu evento — presencial, virtual o híbrido.",
+        "requestCta": "Solicitar esta charla",
+        "backToAll": "Ver todos los temas"
+    },
+    "press": {
+        "eyebrow": "Prensa y medios",
+        "heading": "Isabella en los medios",
+        "intro": "Una selección de entrevistas, columnas y menciones sobre su trabajo en el movimiento cooperativo.",
+        "readMore": "Leer nota"
+    },
+    "blog": {
+        "eyebrow": "Blog",
+        "heading": "Ideas sobre cooperativismo y liderazgo joven",
+        "allCategories": "Todas",
+        "readMore": "Leer artículo",
+        "backToBlog": "Volver al blog",
+        "empty": "Muy pronto habrá artículos aquí."
+    },
+    "contact": {
+        "eyebrow": "Contacto",
+        "heading": "Invita a Isabella a tu próximo evento",
+        "body": "Cuéntame sobre tu organización, el tipo de evento y el tema que te interesa. Reviso cada solicitud personalmente y te responderé lo antes posible.",
+        "form": {
+            "name": "Nombre completo",
+            "email": "Correo electrónico",
+            "phone": "Teléfono (opcional)",
+            "organization": "Organización",
+            "eventType": "Tipo de evento",
+            "eventDate": "Fecha estimada del evento",
+            "topic": "Tema de interés",
+            "topicPlaceholder": "Selecciona un tema (opcional)",
+            "message": "Cuéntame más sobre tu evento",
+            "submit": "Enviar solicitud",
+            "submitting": "Enviando...",
+            "success": "¡Gracias! Tu solicitud fue enviada. Isabella te responderá pronto.",
+            "error": "No pudimos enviar tu solicitud. Revisa los campos e intenta de nuevo."
+        }
+    },
+    "legal": {
+        "privacyTitle": "Política de tratamiento de datos personales",
+        "termsTitle": "Términos y condiciones"
+    },
+    "notFound": {
+        "eyebrow": "Error 404",
+        "heading": "Esta charla todavía no existe",
+        "body": "La página que buscas no está disponible. Puede que el enlace haya cambiado o que aún esté por escribirse.",
+        "cta": "Volver al inicio"
+    }
+}
