@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Models\SiteSetting;
 use App\Models\SiteStat;
 use App\Models\SpeakingTopic;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -28,5 +29,15 @@ class HomeTest extends TestCase
                 ->has('testimonials')
                 ->has('pressMentions')
                 ->has('latestPosts'));
+    }
+
+    public function test_non_translatable_settings_like_the_hero_photo_are_exposed_as_is()
+    {
+        // hero.photo_path is stored as a bare string (Filament's FileUpload output), not a
+        // {es, en} object, since it isn't translatable — it must round-trip unchanged.
+        SiteSetting::create(['key' => 'hero.photo_path', 'group' => 'hero', 'type' => 'image', 'value' => 'site/hero-photo.jpg']);
+
+        $this->get('/')
+            ->assertInertia(fn ($page) => $page->where('hero.photoPath', 'site/hero-photo.jpg'));
     }
 }
