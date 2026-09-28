@@ -51,6 +51,9 @@ jobs:
             set -e
             cd /home/u206029413/domains/isafigueroacoop.com/public_html
             composer install --no-dev --optimize-autoloader --no-interaction
+            # `php artisan storage:link` can't be used here: this host disables PHP's
+            # symlink()/exec() functions, so we create the link with the shell instead.
+            [ -L public/storage ] || ln -s "$(pwd)/storage/app/public" "$(pwd)/public/storage"
             php artisan migrate --force
             php artisan optimize:clear
             php artisan optimize

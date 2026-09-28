@@ -6,8 +6,16 @@ trait HasTranslations
 {
     public function getTranslation(string $attribute, ?string $locale = null): ?string
     {
+        $value = $this->getAttribute($attribute);
+
+        // Non-translatable values (image paths, URLs, plain text) are stored as a
+        // bare scalar rather than a {es, en} object — return them as-is instead of
+        // indexing into them, which would silently resolve to null.
+        if (! is_array($value)) {
+            return $value;
+        }
+
         $locale ??= app()->getLocale();
-        $value = $this->getAttribute($attribute) ?? [];
 
         return $value[$locale] ?? $value[config('app.fallback_locale')] ?? null;
     }
